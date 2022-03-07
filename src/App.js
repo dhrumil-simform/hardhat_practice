@@ -1,22 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import Allowance from "./components/Allowance";
+import Approve from "./components/Approve";
+import SendCoins from "./components/SendCoins";
+import SendCoinsFrom from "./components/SendCoinsFrom";
+
+const DemoTokenAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Send Coins</p>
+        <SendCoins />
+        <br />
+        <p>Approve</p>
+        <Approve />
+        <br />
+        <p>Check Allowance</p>
+        <Allowance />
+        <br />
+        <p>Send Coins from Other Account</p>
+        <SendCoinsFrom />
       </header>
     </div>
   );
